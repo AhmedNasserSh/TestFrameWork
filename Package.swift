@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "TestFramework",
+    name: "MyFramework",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "TestFramework",
-            targets: ["TestFramework"]),
+            name: "MyFramework",
+            targets: ["MyFramework"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
-            name: "TestFramework",
-            url: "https://github.com/AhmedNasserSh/TestFrameWork/releases/download/1.0.0/MyFramework.xcframework.zip",
-            checksum: "bd99dac21b7f0e6ae049c66e60506cf75bcc7fd9ee7d85a1243c60a0276194b3"
+            name: "MyFramework",
+            url: "https://github.com/AhmedNasserSh/MyFramework/releases/download/3.0.0/MyFramework.xcframework.zip",
+            checksum: "80eae175583669ccedf447cc81272a281a749644bc3d9edc2c481e1100270420"
         )
     ]
 )
